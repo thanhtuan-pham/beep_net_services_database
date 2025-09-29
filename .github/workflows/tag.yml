@@ -1,0 +1,17 @@
+on:
+  push:
+    tags:
+      - '*' # Trigger on any tag push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get tag
+        id: tag
+        uses: dawidd6/action-get-tag@v1
+        with:
+          strip_v: true # Optionally strip 'v' prefix
+
+      - name: Use tag
+        run: echo "The tag is ${{ steps.tag.outputs.tag }}"
