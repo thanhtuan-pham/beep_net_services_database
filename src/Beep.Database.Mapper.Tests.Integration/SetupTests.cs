@@ -22,7 +22,7 @@ namespace Beep.Database.Mapper.Tests.Integration
         {
             _sqlContainer = new MsSqlBuilder().Build();
             _sqlContainer.StartAsync().Wait(CancellationToken.None);
-            //test
+            //t
             _connectionString = _sqlContainer.GetConnectionString();
         }
 
