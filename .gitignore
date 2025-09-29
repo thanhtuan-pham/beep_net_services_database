@@ -1,0 +1,10 @@
+.vs/
+src/Beep.Database.Mapper.Tests/bin/
+src/Beep.Database.Mapper.Tests/obj/
+src/Beep.Database.Mapper/bin/
+src/Beep.Database.Mapper/obj/
+/src/Beep.Database.Mapper.Tests.Integration/bin/Debug/net8.0
+/src/Beep.Database.Mapper.Tests.Integration/obj
+/src/Beep.Database.Mapper.Tests.Unit/bin/Debug/net8.0
+/src/Beep.Database.Mapper.Tests.Unit/obj
+/.dockerignore

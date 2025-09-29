@@ -10,3 +10,15 @@ E:\beep_net_services_database\src\Beep.Database.Mapper\obj\Debug\net8.0\Beep.Dat
 E:\beep_net_services_database\src\Beep.Database.Mapper\obj\Debug\net8.0\refint\Beep.Database.Mapper.dll
 E:\beep_net_services_database\src\Beep.Database.Mapper\obj\Debug\net8.0\Beep.Database.Mapper.pdb
 E:\beep_net_services_database\src\Beep.Database.Mapper\obj\Debug\net8.0\ref\Beep.Database.Mapper.dll
+D:\beep_net_services_database\src\Beep.Database.Mapper\bin\Debug\net8.0\Beep.Database.Mapper.deps.json
+D:\beep_net_services_database\src\Beep.Database.Mapper\bin\Debug\net8.0\Beep.Database.Mapper.dll
+D:\beep_net_services_database\src\Beep.Database.Mapper\bin\Debug\net8.0\Beep.Database.Mapper.pdb
+D:\beep_net_services_database\src\Beep.Database.Mapper\obj\Debug\net8.0\Beep.Database.Mapper.GeneratedMSBuildEditorConfig.editorconfig
+D:\beep_net_services_database\src\Beep.Database.Mapper\obj\Debug\net8.0\Beep.Database.Mapper.AssemblyInfoInputs.cache
+D:\beep_net_services_database\src\Beep.Database.Mapper\obj\Debug\net8.0\Beep.Database.Mapper.AssemblyInfo.cs
+D:\beep_net_services_database\src\Beep.Database.Mapper\obj\Debug\net8.0\Beep.Database.Mapper.csproj.CoreCompileInputs.cache
+D:\beep_net_services_database\src\Beep.Database.Mapper\obj\Debug\net8.0\Beep.Database.Mapper.sourcelink.json
+D:\beep_net_services_database\src\Beep.Database.Mapper\obj\Debug\net8.0\Beep.Database.Mapper.dll
+D:\beep_net_services_database\src\Beep.Database.Mapper\obj\Debug\net8.0\refint\Beep.Database.Mapper.dll
+D:\beep_net_services_database\src\Beep.Database.Mapper\obj\Debug\net8.0\Beep.Database.Mapper.pdb
+D:\beep_net_services_database\src\Beep.Database.Mapper\obj\Debug\net8.0\ref\Beep.Database.Mapper.dll

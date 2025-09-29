@@ -4554,11 +4554,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\beep_net_services_database\\src\\Beep.Database.Mapper.Tests.Unit\\Beep.Database.Mapper.Tests.Unit.csproj",
+      "projectUniqueName": "D:\\beep_net_services_database\\src\\Beep.Database.Mapper.Tests.Unit\\Beep.Database.Mapper.Tests.Unit.csproj",
       "projectName": "Beep.Database.Mapper.Tests.Unit",
-      "projectPath": "E:\\beep_net_services_database\\src\\Beep.Database.Mapper.Tests.Unit\\Beep.Database.Mapper.Tests.Unit.csproj",
+      "projectPath": "D:\\beep_net_services_database\\src\\Beep.Database.Mapper.Tests.Unit\\Beep.Database.Mapper.Tests.Unit.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "E:\\beep_net_services_database\\src\\Beep.Database.Mapper.Tests.Unit\\obj\\",
+      "outputPath": "D:\\beep_net_services_database\\src\\Beep.Database.Mapper.Tests.Unit\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\DevExpress 20.2\\Components\\Offline Packages"
@@ -4580,8 +4580,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\beep_net_services_database\\src\\Beep.Database.Mapper\\Beep.Database.Mapper.csproj": {
-              "projectPath": "E:\\beep_net_services_database\\src\\Beep.Database.Mapper\\Beep.Database.Mapper.csproj"
+            "D:\\beep_net_services_database\\src\\Beep.Database.Mapper\\Beep.Database.Mapper.csproj": {
+              "projectPath": "D:\\beep_net_services_database\\src\\Beep.Database.Mapper\\Beep.Database.Mapper.csproj"
             }
           }
         }

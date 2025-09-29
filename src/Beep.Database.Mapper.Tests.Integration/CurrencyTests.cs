@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace Beep.Database.Mapper.Tests.Integration
 {
-    [TestClass]
     public class CurrencyTests : SetupTests
     {
-        [TestMethod]
         public void Insert()
         {
             const string sql = """
