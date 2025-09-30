@@ -1,8 +1,9 @@
 name: Publish NuGet Package
 
 on:
-  release:
-  - '*'
+  push:
+    branches: 
+      - 'release'
 
 permissions:
   contents: write
