@@ -1,0 +1,15 @@
+name: Publish NuGet Package
+
+on:
+  release:
+        types: [published, created, edited]
+
+permissions:
+  contents: write
+  issues: read
+  checks: write
+  pull-requests: write
+  
+jobs:
+  call-reusable-workflow:
+    uses: thanhtuan-pham/beep_net_pipeline_templates/.github/workflows/publish-nuget.yml@main
