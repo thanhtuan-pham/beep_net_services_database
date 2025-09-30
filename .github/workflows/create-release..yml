@@ -12,19 +12,7 @@ permissions:
   pull-requests: write
   
 jobs:
-  build:
-    name: Create Release
-    runs-on: windows-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: false
-          prerelease: false
+  call-reusable-workflow:
+    uses: thanhtuan-pham/beep_net_pipeline_templates/.github/workflows/create-release.yml@main
+    with:
+      runner: 'windows-latest'
