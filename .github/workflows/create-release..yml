@@ -15,4 +15,5 @@ permissions:
   
 jobs:
   call-reusable-workflow:
+    if: startsWith(github.ref, 'refs/tags/')
     uses: thanhtuan-pham/beep_net_pipeline_templates/.github/workflows/create-release.yml@main
