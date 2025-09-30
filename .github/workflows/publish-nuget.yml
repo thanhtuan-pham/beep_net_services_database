@@ -13,3 +13,5 @@ permissions:
 jobs:
   call-reusable-workflow:
     uses: thanhtuan-pham/beep_net_pipeline_templates/.github/workflows/publish-nuget.yml@main
+    secrets:
+      NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
