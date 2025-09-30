@@ -14,5 +14,3 @@ permissions:
 jobs:
   call-reusable-workflow:
     uses: thanhtuan-pham/beep_net_pipeline_templates/.github/workflows/create-release.yml@main
-    with:
-      runner: 'windows-latest'
