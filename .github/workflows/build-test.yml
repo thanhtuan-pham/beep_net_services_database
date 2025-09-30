@@ -1,0 +1,24 @@
+name: Build And Test Project
+
+on:
+  push:
+    branches: 
+    - '*'
+    - '!release'
+    
+  pull_request:
+    branches:
+    - '*'
+    - '!release'
+    
+permissions:
+  contents: write
+  issues: read
+  checks: write
+  pull-requests: write
+  
+jobs:
+  call-reusable-workflow:
+    uses: thanhtuan-pham/beep_net_pipeline_templates/.github/workflows/build-test.yml@main
+    with:
+      results-path: 'src/**/*.trx'
