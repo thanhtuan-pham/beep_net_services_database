@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Beep.Database.Mapper.Tests.Integration")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b34cf6ff31e762047e0d9c8025aa0411c8462f50")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fa68e7ab9b2135e27b2dc65346868d53a4011ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("Beep.Database.Mapper.Tests.Integration")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Beep.Database.Mapper.Tests.Integration")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -59,7 +59,8 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\testcontainers\\4.7.0\\testcontainers.4.7.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\testcontainers.mssql\\4.7.0\\testcontainers.mssql.4.7.0.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\testcontainers.mssql\\4.7.0\\testcontainers.mssql.4.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\beep.database.mapper\\1.0.0\\beep.database.mapper.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }
