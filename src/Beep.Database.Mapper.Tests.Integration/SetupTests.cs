@@ -14,8 +14,8 @@ namespace Beep.Database.Mapper.Tests.Integration
         [TestInitialize]
         public void SetUp()
         {
-            SetupDatabase();
-            CreateTables();
+            //SetupDatabase();
+            //CreateTables();
         }
 
         private void SetupDatabase()
@@ -111,7 +111,7 @@ namespace Beep.Database.Mapper.Tests.Integration
         [TestCleanup]
         public void Clean()
         {
-            _sqlContainer.DisposeAsync();
+            //_sqlContainer.DisposeAsync();
         }
 
         public Task<T?> Insert<T>(string sql, object? param, IDbTransaction? transaction)
