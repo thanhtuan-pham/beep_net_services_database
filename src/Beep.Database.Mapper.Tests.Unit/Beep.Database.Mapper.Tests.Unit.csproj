@@ -16,5 +16,9 @@
   <ItemGroup>
     <ProjectReference Include="..\Beep.Database.Mapper\Beep.Database.Mapper.csproj" />
   </ItemGroup>
-
+	
+	<ItemGroup>
+		<Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+	</ItemGroup>
+	
 </Project>
