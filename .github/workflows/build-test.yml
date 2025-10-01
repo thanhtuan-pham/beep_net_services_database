@@ -22,4 +22,4 @@ jobs:
     uses: thanhtuan-pham/beep_net_pipeline_templates/.github/workflows/build-test.yml@main
     with:
       results-path: 'src/**/*.trx'
-      project-path: '["src\Beep.Database.Mapper.Tests.Unit\Beep.Database.Mapper.Tests.Unit.csproj"]'
+      project-path: '["src/Beep.Database.Mapper.Tests.Unit/Beep.Database.Mapper.Tests.Unit.csproj"]'
