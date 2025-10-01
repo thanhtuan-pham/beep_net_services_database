@@ -13,6 +13,4 @@ permissions:
   
 jobs:
   call-reusable-workflow:
-    uses: thanhtuan-pham/beep_net_pipeline_templates/.github/workflows/create-release.yml@main
-    secrets:
-      TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    uses: thanhtuan-pham/beep_net_pipeline_templates/.github/workflows/create-release2.yml@main
