@@ -10,7 +10,7 @@ namespace Beep.Database.Mapper.Tests.Unit
 
         [TestInitialize]
         public void SetUp()
-        {
+        {//testr
             _dbConnection = new Mock<IDbConnection>();
             _dbConnection.SetupSet(c => c.ConnectionString = It.IsAny<string>()).Verifiable();
             _dbConnection.Setup(c => c.Open()).Verifiable();
