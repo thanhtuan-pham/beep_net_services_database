@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Beep.Database.Mapper.Tests.Integration": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
