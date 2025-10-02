@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GyKCBf4zdpZJ+oDH1PJoOMBbXUU5n4O0c99a7vQ9CBtQucbo9Jqda2ejvkLn1u6p02gQSnlLjeRBPL3CKKaSug==",
+  "dgSpecHash": "4Ig46Rc+iH697d/r+R4UGuElCWiMi7YZDE8XnvQgTG/bOVH07vTqbWThNDjaXxIpgjO95B7FRebEnFUqkKD/kw==",
   "success": true,
   "projectFilePath": "D:\\beep_net_services_database\\src\\Beep.Database.Mapper.Tests.Integration\\Beep.Database.Mapper.Tests.Integration.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.testing.platform.msbuild\\1.4.3\\microsoft.testing.platform.msbuild.1.4.3.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.12.0\\microsoft.testplatform.objectmodel.17.12.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.testplatform.testhost\\17.12.0\\microsoft.testplatform.testhost.17.12.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\microsoft.visualstudio.azure.containers.tools.targets.1.19.6.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mstest\\3.6.4\\mstest.3.6.4.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mstest.analyzers\\3.6.4\\mstest.analyzers.3.6.4.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mstest.testadapter\\3.6.4\\mstest.testadapter.3.6.4.nupkg.sha512",
@@ -59,7 +60,8 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.text.json\\8.0.5\\system.text.json.8.0.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\testcontainers\\4.7.0\\testcontainers.4.7.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\testcontainers.mssql\\4.7.0\\testcontainers.mssql.4.7.0.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\testcontainers.mssql\\4.7.0\\testcontainers.mssql.4.7.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\beep.database.mapper\\1.0.0\\beep.database.mapper.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }
