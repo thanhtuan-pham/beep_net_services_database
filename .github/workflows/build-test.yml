@@ -20,4 +20,3 @@ permissions:
 jobs:
   call-reusable-workflow:
     uses: thanhtuan-pham/beep_net_pipeline_templates/.github/workflows/doc-test.yml@main
-  
