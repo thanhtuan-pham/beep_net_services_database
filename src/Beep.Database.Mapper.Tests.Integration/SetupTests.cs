@@ -4,47 +4,50 @@ using Testcontainers.MsSql;
 
 namespace Beep.Database.Mapper.Tests.Integration
 {
-    [TestClass]
-    public class SetupTests
-    {
-        private MsSqlContainer _sqlContainer;
-        private string _connectionString;
-        private IDbConnection _dbConnection;
+	[TestClass]
+	public class SetupTests
+	{
+		private MsSqlContainer _sqlContainer;
+		private string _connectionString;
+		private IDbConnection _dbConnection;
 
-        [TestInitialize]
-        public void SetUp()
-        {
-            //SetupDatabase();
-            //CreateTables();
-        }
+		[TestInitialize]
+		public void SetUp()
+		{
+			SetupDatabase();
+			CreateTables();
+		}
 
-        private void SetupDatabase()
-        {
-            _sqlContainer = new MsSqlBuilder().Build();
-            _sqlContainer.StartAsync().Wait(CancellationToken.None);
-            //test12
-            _connectionString = _sqlContainer.GetConnectionString();
-        }
+		private void SetupDatabase()
+		{
+			_sqlContainer = new MsSqlBuilder().Build();
+			_sqlContainer.StartAsync().Wait(CancellationToken.None);
 
-        private void CreateTables()
-        {
-            _dbConnection = new SqlConnection(_connectionString);
+			_connectionString = _sqlContainer.GetConnectionString();
+		}
 
-            var originalStatus = _dbConnection.State;
-            if(originalStatus != ConnectionState.Open)
-                _dbConnection.Open();
+		private void CreateTables()
+		{
+			_dbConnection = new SqlConnection(_connectionString);
 
-            using var transaction = _dbConnection.BeginTransaction();
-            
-            CreateCurrencyTable(transaction);
-            CreateCountryTable(transaction);
+			var originalStatus = _dbConnection.State;
+			if (originalStatus != ConnectionState.Open)
+				_dbConnection.Open();
 
-            transaction.Commit();
-        }
+			using var transaction = _dbConnection.BeginTransaction();
 
-        private void CreateCurrencyTable(IDbTransaction dbTransaction)
-        {
-            const string createTableCountry = """
+			CreateCurrencyTable(transaction);
+			CreateCountryTable(transaction);
+
+			transaction.Commit();
+
+			if (originalStatus == ConnectionState.Closed)
+				_dbConnection.Close();
+		}
+
+		private void CreateCurrencyTable(IDbTransaction dbTransaction)
+		{
+			const string createTableCountry = """
                 CREATE TABLE [dbo].[Currency](
                 	[Id] [int] IDENTITY(1,1) NOT NULL,
                 	[CodeISO] [char](3) NOT NULL,
@@ -65,15 +68,15 @@ namespace Beep.Database.Mapper.Tests.Integration
                 ALTER TABLE [dbo].[Currency] ADD  CONSTRAINT [DF_Currency_Synchronized]  DEFAULT ((0)) FOR [Synchronized]
                 """;
 
-            using var command = _dbConnection.CreateCommand();
-            command.Transaction = dbTransaction;
-            command.CommandText = createTableCountry;
-            command.ExecuteNonQuery();
-        }
+			using var command = _dbConnection.CreateCommand();
+			command.Transaction = dbTransaction;
+			command.CommandText = createTableCountry;
+			command.ExecuteNonQuery();
+		}
 
-        private void CreateCountryTable(IDbTransaction dbTransaction)
-        {
-            const string createTableCountry = """
+		private void CreateCountryTable(IDbTransaction dbTransaction)
+		{
+			const string createTableCountry = """
                 CREATE TABLE [dbo].[Country](
                 	[Id] [int] IDENTITY(1,1) NOT NULL,
                 	[Currency_Id] [int] NULL,
@@ -102,46 +105,45 @@ namespace Beep.Database.Mapper.Tests.Integration
                 ALTER TABLE [dbo].[Country] CHECK CONSTRAINT [FK_Country_Currency]
                 """;
 
-            using var command = _dbConnection.CreateCommand();
-            command.Transaction = dbTransaction;
-            command.CommandText = createTableCountry;
-            command.ExecuteNonQuery();
-        }
+			using var command = _dbConnection.CreateCommand();
+			command.Transaction = dbTransaction;
+			command.CommandText = createTableCountry;
+			command.ExecuteNonQuery();
+		}
 
-        [TestCleanup]
-        public void Clean()
-        {
-            //_sqlContainer.DisposeAsync();
-        }
+		[TestCleanup]
+		public void Clean()
+		{
+			_sqlContainer.DisposeAsync();
+		}
 
-        public Task<T?> Insert<T>(string sql, object? param, IDbTransaction? transaction)
-            where T : class
-        {
-            return _dbConnection.ExecuteScalarAsync<T>(sql, param, transaction);
-        }
+		public Task<T?> Insert<T>(string sql, object? param, IDbTransaction? transaction)
+		{
+			return _dbConnection.ExecuteScalarAsync<T>(sql, param, transaction);
+		}
 
-        public Task<T?> Update<T>(string sql, object? param, IDbTransaction? transaction)
-            where T : class
-        {
-            return _dbConnection.ExecuteScalarAsync<T>(sql, param, transaction);
-        }
+		public Task<T?> Update<T>(string sql, object? param, IDbTransaction? transaction)
+			where T : class
+		{
+			return _dbConnection.ExecuteScalarAsync<T>(sql, param, transaction);
+		}
 
-        public Task<T?> Delete<T>(string sql, object? param, IDbTransaction? transaction)
-           where T : class
-        {
-            return _dbConnection.ExecuteScalarAsync<T>(sql, param, transaction);
-        }
+		public Task<T?> Delete<T>(string sql, object? param, IDbTransaction? transaction)
+		   where T : class
+		{
+			return _dbConnection.ExecuteScalarAsync<T>(sql, param, transaction);
+		}
 
-        public Task<T?> Get<T>(string sql, object? param, IDbTransaction? transaction)
-            where T : class
-        {
-            return _dbConnection.QuerySingleOrDefaultAsync<T>(sql, param, transaction);
-        }
+		public Task<T?> Get<T>(string sql, object? param, IDbTransaction? transaction)
+			where T : class
+		{
+			return _dbConnection.QuerySingleOrDefaultAsync<T>(sql, param, transaction);
+		}
 
-        public Task<IEnumerable<T>> List<T>(string sql, object? param, IDbTransaction? transaction)
-            where T : class
-        {
-            return _dbConnection.QueryAsync<T>(sql, param, transaction);
-        }
-    }
+		public Task<IEnumerable<T>> List<T>(string sql, object? param, IDbTransaction? transaction)
+			where T : class
+		{
+			return _dbConnection.QueryAsync<T>(sql, param, transaction);
+		}
+	}
 }
