@@ -19,4 +19,6 @@ permissions:
   
 jobs:
   call-reusable-workflow:
-    uses: thanhtuan-pham/beep_net_pipeline_templates/.github/workflows/doc-test.yml@main
+    uses: thanhtuan-pham/beep_net_pipeline_templates/.github/workflows/build-test.yml@main
+    with:
+      results-path: 'src/**/*.trx'
